@@ -1,54 +1,54 @@
-# Gradle
-.gradle/
-gradle/
-gradlew
-gradlew.bat
+# Build artifacts
 build/
-!build/libs/
-*.gradle
+bin/
+out/
+.gradle/
+*.class
+*.jar
+*.war
+*.ear
 
-# IDE
+# IDE files
 .idea/
+.vscode/
 *.iml
 *.ipr
 *.iws
-.vscode/
-.settings/
 .classpath
 .project
+.settings/
+.apt_generated/
 
-# Git
+# Version control
 .git/
 .gitignore
 .gitattributes
 
 # Documentation
 *.md
-README*
-LICENSE*
-
-# CI/CD
-.github/
+HELP.md
 
 # Environment files (will be provided at runtime)
 .env
 .env.local
 .env.prod
-.env.example
-
-# OS
-.DS_Store
-Thumbs.db
 
 # Test files
 src/test/
+*.test
+test-results/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# CI/CD files (not needed in image)
+.github/
+ci-cd.yaml
 
 # Logs
 *.log
 logs/
-
-# Temporary files
-*.tmp
-*.bak
-*.swp
-*~
